@@ -1,0 +1,267 @@
+/* =============== MAIN STYLES=================== */
+
+:root {
+    --primary: #5222D0;
+    --secondary: #EC615B;
+    --light: #FFFFFF;
+    --dark: #000000;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0.1rem;
+
+    text-transform: uppercase;
+    color: var(--light);
+    background-color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    color: var(--light);
+    background-color: var(--secondary);
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+
+    column-gap: 2em;
+
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 160%;
+}
+
+.link {
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--light);
+}
+
+/* ========== HEADER ============= */
+
+.header {
+    padding-top: 2rem;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    line-height: normal;
+    color: var(--dark);
+}
+
+.header__button {
+    padding: 0.9rem 1rem;
+    min-width: 115px;
+    min-height: 38px;
+
+    column-gap: 0.5rem;
+    font-size: 0.9rem;
+
+    border-radius: 20px;
+}
+
+/* ============= SECTION RPEVIEW ============ */
+
+.preview {
+    margin-bottom: 80px;
+
+    background-image: url("assets/image/background_index.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.preview__text {
+    max-width: fit-content;
+    padding-top: 50px;
+    padding-left: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preview__title {
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.preview__subtitle {
+    margin-top: 10px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.preview__button {
+    margin-top: 30px;
+    padding: 28px;
+    width: max-content;
+    column-gap: 1rem;
+
+    font-size: 2.1rem;
+
+    border-radius: 40px;
+}
+
+.preview__image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.preview__image img {
+    padding-top: 50px;
+    padding-right: 50px;
+
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+
+    column-gap: 2em;
+
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 160%;
+}
+
+.preview__nav {
+    margin-top: 90px;
+}
+
+.preview__link {
+    color: var(--primary);
+}
+
+/* ============ PAGE 1.HTML */
+
+.ability {
+    margin-bottom: 80px;
+}
+
+.ability__title {
+    margin-top: 90px;
+    margin-left: 3rem;
+
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-img-top {
+    padding: 1rem 1rem;
+    border-radius: 0;
+}
+
+.card__title {
+    font-size: 30px;
+    line-height: 120%;
+
+    color: var(--dark);
+}
+
+.card__text {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+    color: var(--dark);
+}
+
+.card__body_accent {
+    margin: 1rem;
+    background-color: var(--secondary);
+}
+
+.card__body_accent .card__title {
+    color: var(--light);
+}
+
+.card__body_accent input {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 3.1rem;
+    border: none;
+}
+
+.card__body_accent input::placeholder {
+    padding: 1rem;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.card__button {
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    font-size: 13px;
+    line-height: 13px;
+
+    border-radius: 20px;
+}
+
+.card__body_accent .card__button:hover {
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.ability__nav {
+    margin-left: 3rem;
+
+    font-size: 20px;
+    line-height: 160%;
+
+    color: var(--dark);
+}
+
+.ability__link {
+    color: var(--dark);
+}
